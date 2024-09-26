@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearUbicacion">
+
+    <TextView
+        android:id="@+id/tituloSeccionSensoresTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear nuevo sensor"
+        android:padding="8sp"
+        android:layout_margin="8sp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tituloSensorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del sensor:"
+        android:layout_below="@id/tituloSeccionSensoresTextView"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ingresarSensorEditText"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloSensorTextView"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
+        android:backgroundTint="#F0EAEA"
+        android:background="@drawable/edittext_border"
+        android:hint="Ej: Sensor para invernadero"
+        android:inputType="text"
+        android:padding="16sp" />
+
+    <TextView
+        android:id="@+id/descripcionSensoresTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del sensor:"
+        android:layout_below="@id/ingresarSensorEditText"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ingresarDescripcionEditText"
+        android:layout_width="388dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/descripcionSensoresTextView"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="#F0EAEA"
+        android:inputType="text"
+        android:padding="16sp" />
+
+    <TextView
+        android:id="@+id/temperaturaIdealTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la temperatura ideal en Celsius:"
+        android:layout_below="@id/ingresarDescripcionEditText"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ingresarTemperaturaIdealEditText"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperaturaIdealTextView"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="#F0EAEA"
+        android:inputType="text"
+        android:padding="16sp" />
+
+    <TextView
+        android:id="@+id/ingresarUbicacionSensorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la ubicación del sensor:"
+        android:layout_below="@id/ingresarTemperaturaIdealEditText"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/ubicacionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingresarUbicacionSensorTextView"
+        android:layout_margin="8sp"
+        android:entries="@array/ubicacion_sensor"
+        android:padding="16sp" />
+
+    <TextView
+        android:id="@+id/ingresarTipoSensorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el tipo de sensor:"
+        android:layout_below="@id/ubicacionSpinner"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/tipoSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingresarTipoSensorTextView"
+        android:layout_margin="8sp"
+        android:entries="@array/tipos_sensor"
+        android:padding="16sp" />
+
+    <Button
+        android:id="@+id/finalizarButton"
+        android:layout_below="@+id/tipoSensorSpinner"
+        android:layout_width="391dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="8sp"
+        android:backgroundTint="@color/orange"
+        android:padding="10sp"
+        android:text="@string/textoFinalizarButton"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_check_circle_24" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearUbicacion">
+
+    <TextView
+        android:id="@+id/tituloSeccionUbicacionesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crearUbicacionTextView"
+        android:padding="8sp"
+        android:layout_margin="8sp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tituloUbicacionesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crearUbicacionTituloTextView"
+        android:layout_below="@id/tituloSeccionUbicacionesTextView"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ingresarUbicacionEditText"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloUbicacionesTextView"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
+        android:backgroundTint="#F0EAEA"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/crearUbicacionTituloHint"
+        android:inputType="text"
+        android:padding="16sp" />
+
+    <TextView
+        android:id="@+id/descripcionUbicacionesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crearDescripcionTextView"
+        android:layout_below="@id/ingresarUbicacionEditText"
+        android:padding="8sp"
+        android:layout_margin="10sp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ingresarDescripcionEditText"
+        android:layout_width="388dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/descripcionUbicacionesTextView"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="#F0EAEA"
+        android:inputType="text"
+        android:padding="16sp" />
+
+    <Button
+        android:id="@+id/finalizarButton"
+        android:layout_below="@+id/ingresarDescripcionEditText"
+        android:layout_width="391dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="8sp"
+        android:backgroundTint="@color/orange"
+        android:padding="10sp"
+        android:text="@string/textoFinalizarButton"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_check_circle_24" />
+
+</RelativeLayout>

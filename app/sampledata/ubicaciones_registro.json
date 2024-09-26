@@ -1,0 +1,7 @@
+{
+  "activities" : [
+    {"icon": "@sample/activity_icons[ic_biking.png]", "descripcion": "Metro cuadrado de arandanos", "nombre" : "Invernadero N-1"},
+    {"icon": "@sample/activity_icons[ic_biking.png]", "descripcion": "Plantación de arandanos 4M2", "nombre" : "Invernadero N-2"},
+    {"icon": "@sample/activity_icons[ic_biking.png]", "descripcion": "Plantación de arandanos 8M2", "nombre" : "Invernadero N-3"}
+  ]
+}
